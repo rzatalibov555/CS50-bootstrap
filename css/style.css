@@ -1,0 +1,144 @@
+body{
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.main{
+    width: 100%;
+    min-height: 600px;
+    /* background: grey; */
+    float: left;
+}
+
+.r_header{
+    width: 100%;
+    min-height: 70px;
+    background: blue;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.r_center{
+    width: 100%;
+    min-height: 700px;
+    background: green;
+    float: left;
+}
+
+.r_footer{
+    width: 100%;
+    min-height: 70px;
+    background: blue;
+    float: left;
+    margin-top: 15px;
+}
+
+
+.rLeft{
+    width: 20%;
+    min-height: inherit;
+    background: aqua;
+    float: left;
+}
+
+.rContent{
+    width: calc(60% - 30px);
+    min-height: inherit;
+    background: rgb(218, 14, 228);
+    float: left;
+    margin: 0 15px;
+}
+
+.rRight{
+    width: 20%;
+    min-height: inherit;
+    background: rgb(21, 203, 54);
+    float: left;
+}
+
+
+
+
+
+@media only screen and (max-width: 992px) {
+    .rLeft, .rContent, .rRight{
+        width: 33.33%;
+     
+    }
+
+    .rContent{
+        width: calc(33.33% - 30px);
+        /* margin: 0px; */
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .rLeft, .rContent, .rRight, .r_center{
+        width: 100%;
+        min-height: 150px;
+    }
+
+    .rContent{
+        margin: 15px 0px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {
+    .rLeft, .rContent, .rRight{
+        width: 33.33%;
+     
+    }
+
+    .rContent{
+       
+        margin: 0px;
+    }
+} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+    
+} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+
+
+
+a[target="_blank"]{
+    background: blue;
+    color: white;
+}
+
+a[id="demo"]{
+    background: red;
+}
+
+
+
+/* input[type="text"]{
+    color: red;
+}
+
+input[type="password"]{
+    color: aquamarine;
+} */
+
+/* input[placeholder~="Enter"]{
+    background: purple;
+} */
+/* input[placeholder|="Enter"]{
+    background: blue;
+} */
+
+[placeholder*="ag"] {
+    background: yellow;
+  }
